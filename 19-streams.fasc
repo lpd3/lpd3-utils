@@ -1,0 +1,15 @@
+(#Y(si::bytecodes nil nil (1 0 16 1 29) #1=#A(t (51) ("LPD3-UTILS" si::select-package lpd3-utils::readlist ext::location (defun lpd3-utils::readlist) (#2=#P"/data/data/org.eql5.android.repl/files/quicklisp/local-projects/lpd3-utils/19-streams.lisp" . 58) ext::annotate :lambda-list (&rest lpd3-utils::args) lpd3-utils::args :cl find-package *package* string "(" read-line apply ")" concatenate read-from-string #Y(nil nil nil (26 11 10 16 11 48 12 15 13 15 14 33 15 12 13 0 19 2 16 12 15 17 19 4 18 12 19 1 19 12 72 1 44 1 29) #1# #2# 58) uiop/stream::call-with-safe-io-syntax #Y(lpd3-utils::readlist nil nil (27 45 9 34 20 12 19 1 21 29) #1# #2# 58) si::fset function "Intended for use with streams, especially
+  user interaction. Takes an arbitrary number
+  of args, constructs a string which is 
+  a pair of parentheses enclosing all
+  the args, then reads from the string. 
+  Useful for allowing users to enter
+  operations without enclosing them in 
+  lists." si::set-documentation lpd3-utils::prompt (defun lpd3-utils::prompt) (#2# . 536) (lpd3-utils::format-control &rest lpd3-utils::format-args) lpd3-utils::format-control lpd3-utils::format-args format *query-io* read #Y(nil nil nil (26 11 10 16 11 48 12 33 33 12 14 34 13 1 13 0 19 4 16 14 34 19 1 35 44 1 29) #1# #2# 536) #Y(lpd3-utils::prompt nil nil (24 45 31 27 45 32 34 36 12 19 1 21 29) #1# #2# 536) "Prompt the user through *query-io*. 
+  Takes an optional format control string
+  and format args, all of which are used
+  to construct the message. Returns the
+  user's response." lpd3-utils::break-loop (defun lpd3-utils::break-loop) (#2# . 920) (lpd3-utils::fn lpd3-utils::quit &rest lpd3-utils::args) lpd3-utils::fn lpd3-utils::quit "Entering break-loop." 0 lpd3-utils::in "~A~%" #Y(lpd3-utils::break-loop nil nil (24 45 43 24 45 44 27 45 9 14 34 15 45 19 2 33 58 60 50 57 46 61 1 1 33 27 12 13 2 19 2 16 45 47 13 0 19 1 44 39 5 75 73 36 2 14 34 15 48 13 5 13 0 20 1 23 12 19 3 33 43 1 35 0 0 62 73 63 29) #1# #2# 920) "Establishes a program loop for user
+  interaction. Takes a function to run
+  on each loop, a function that will be the
+  signal to quit, and args as for prompt.")) #2# 0) #Y(si::bytecodes nil nil (15 2 15 3 15 4 15 5 19 4 6 15 2 14 7 77 15 8 19 4 6 15 2 34 22 12 19 2 23 15 2 15 24 15 25 19 3 26 1 2 73 29) #1# #2# 58) #Y(si::bytecodes nil nil (15 27 15 3 15 28 15 29 19 4 6 15 27 14 7 77 15 30 19 4 6 15 27 34 37 12 19 2 23 15 27 15 24 15 38 19 3 26 1 27 73 29) #1# #2# 536) #Y(si::bytecodes nil nil (15 39 15 3 15 40 15 41 19 4 6 15 39 14 7 77 15 42 19 4 6 15 39 1 49 12 19 2 23 15 39 15 24 15 50 19 3 26 1 39 73 29) #1# #2# 920))
